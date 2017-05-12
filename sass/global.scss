@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+};
+
+.wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+@import 'top';
+@import 'nav';
+@import 'top-slider';
+@import 'products';

@@ -1,0 +1,52 @@
+.logo {
+	color: #3cc3b5;
+	font-family: 'Lobster', cursive;
+	font-size: 49px;
+	font-weight: 400;
+	float: left;
+}
+
+.top .wrap {
+	padding: 20px;
+}
+
+.search {
+	float: left;
+	padding-left: 15%;
+	padding-top: 15px;
+
+	input[type="text"] {
+		width: 436px;
+		height: 33px;
+		border: 1px solid #e1e1e1;
+		background-color: #ffffff;
+		position: relative;
+		color: #afafaf;
+    	font-family: "Bebas Neue";
+    	font-size: 20px;
+    	padding-left: 15px;
+	};
+
+	input[type="submit"] {
+		width: 22px;
+		height: 23px;
+		background: url(../img/search.png) no-repeat;
+		position: relative;
+		border: none;
+		left: -35px;
+		top: 5px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.basket {
+	float: right;
+	color: #a1a1a1;
+	font-family: 'Bebas Neue', arial;
+	font-size: 33px;
+	font-weight: 400;
+	padding-top: 5px;
+}

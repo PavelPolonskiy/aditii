@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.logo {
+  color: #3cc3b5;
+  font-family: 'Lobster', cursive;
+  font-size: 49px;
+  font-weight: 400;
+  float: left;
+}
+
+.top .wrap {
+  padding: 20px;
+}
+
+.search {
+  float: left;
+  padding-left: 15%;
+  padding-top: 15px;
+}
+
+.search input[type="text"] {
+  width: 436px;
+  height: 33px;
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  position: relative;
+  color: #afafaf;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.search input[type="submit"] {
+  width: 22px;
+  height: 23px;
+  background: url(../img/search.png) no-repeat;
+  position: relative;
+  border: none;
+  left: -35px;
+  top: 5px;
+}
+
+.search input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.basket {
+  float: right;
+  color: #a1a1a1;
+  font-family: 'Bebas Neue', arial;
+  font-size: 33px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+nav {
+  background-color: #4bd0c2;
+  height: 36px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0 18px 0 18px;
+  line-height: 1.8;
+}
+
+nav ul li {
+  float: left;
+  color: #ffffff;
+  font-family: 'Bebas Neue', arial;
+  font-size: 21px;
+  font-weight: 400;
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  position: relative;
+  height: 36px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(100% - 20px);
+  height: 2px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+}
+
+nav ul li + li::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 2px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.top-slider {
+  background-color: #3bc7b8;
+}
+
+.slider-item {
+  padding: 65px 80px 50px 80px;
+}
+
+.slider-img {
+  display: block;
+  float: left;
+  margin-right: 100px;
+}
+
+.slider-text {
+  float: left;
+}
+
+.slider-text .item-name {
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 61px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.slider-text .item-descr {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.slider-text button {
+  width: 139px;
+  height: 46px;
+  border-radius: 5px;
+  border: 3px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 27px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.slider-text button:hover {
+  cursor: pointer;
+}
+
+.slick-dots {
+  bottom: 25px !important;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  color: #7ddad1 !important;
+}
+
+/*.slick-prev.slick-arrow, .slick-next.slick-arrow {
+	visibility: hidden;
+}*/
+.products-img, .products-descr {
+  float: left;
+}
+
+.products-slider-item {
+  width: 33%;
+  padding: 40px 0;
+}
+
+.products-slider-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.products-descr {
+  width: 75px;
+  color: #afafaf;
+  font-family: "Bebas Neue";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 37px;
+  margin-left: 20px;
+}
+
+button.shop {
+  margin-top: 10px;
+  width: 59px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #3cc395;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 19px;
+  border: none;
+}
+
+button.shop:hover {
+  cursor: pointer;
+}
+
+.products-slider {
+  position: relative;
+}
+
+.slider-item-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-item-wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.slider-item-wrap.w65 {
+  width: 65%;
+}
+
+.prev-a {
+  position: absolute;
+  height: 88px;
+  width: 31px;
+  background-image: url(../img/prev-a.png);
+  border: none;
+  background-color: transparent;
+  left: 5%;
+  top: 30%;
+}
+
+.prev-a:hover {
+  cursor: pointer;
+}
+
+.next-a {
+  position: absolute;
+  height: 88px;
+  width: 31px;
+  background-image: url(../img/next-a.png);
+  border: none;
+  right: 0;
+  background-color: transparent;
+  right: 5%;
+  top: 30%;
+}
+
+.next-a:hover {
+  cursor: pointer;
+}
+
+.feature-header {
+  background-color: #3ac3b8;
+  padding-left: 15%;
+  height: 67px;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.featured-content {
+  padding: 0 0 73px 0;
+}
+
+.featured-content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.featured-item {
+  width: calc(33% - 54px);
+  float: left;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  color: #afafaf;
+  font-family: "Bebas Neue";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 25px;
+  height: 260px;
+  margin: 0 27px;
+  margin-top: 47px;
+}
+
+.featured-item img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.featured-item .featured-descr {
+  margin-bottom: 10px;
+}
+
+.featured-item .f-priece {
+  position: relative;
+}
+
+.featured-item button {
+  width: 74px;
+  height: 34px;
+  border-radius: 3px;
+  background-color: #3cc395;
+  border: none;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+.featured-item:hover {
+  border-bottom: 5px solid #3cc395;
+}
+
+footer {
+  background-color: #3cc3b5;
+  padding-bottom: 40px;
+}
+
+footer .wrap {
+  max-width: 840px;
+}
+
+footer .footer-item {
+  width: 25%;
+  float: left;
+}
+
+footer .footer-item .foot-item-name {
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 42px 0 27px;
+}
+
+footer .footer-item p {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.copy {
+  height: 46px;
+  background-color: #2da89b;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+/*# sourceMappingURL=global.css.map */
